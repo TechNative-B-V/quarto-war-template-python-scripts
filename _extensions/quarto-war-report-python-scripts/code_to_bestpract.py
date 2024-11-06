@@ -3,7 +3,7 @@ import yaml
 
 pract_best = {}
 
-file_path = '../../waf_model/code-to-bestpract.yml'
+file_path = '../../../waf_model/code-to-bestpract.yml'
 with open(file_path, 'r') as file:
     best_pract = yaml.safe_load(file)
 

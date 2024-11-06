@@ -7,20 +7,20 @@ allQuestions = {}
 tmpAllBestPractice = {}
 default_prios = {}
 
-file_path = '../../waf_model/bestpract_default_priorities.yml'
+file_path = '../../../waf_model/bestpract_default_priorities.yml'
 with open(file_path, 'r') as file:
     default_prios = yaml.safe_load(file)
 
-file_path = '../../waf_model/qstid-to-code.yml'
+file_path = '../../../waf_model/qstid-to-code.yml'
 with open(file_path, 'r') as file:
     qstid_to_code = yaml.safe_load(file)
 
-file_path = '../../waf_model/bestpract-to-code.yml'
+file_path = '../../../waf_model/bestpract-to-code.yml'
 with open(file_path, 'r') as file:
     answerid_to_bpcode = yaml.safe_load(file)
 
 def awstoolfilename(filename, idx):
-    return '../../data/awstool/'+filename+'-'+str(idx)+'.json'
+    return '../../../data/awstool/'+filename+'-'+str(idx)+'.json'
 
 def convert_to_dict(filename, datakey):
 
